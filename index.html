@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshit Allumolu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Harshit Allumolu</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#education">Education</a></li> -->
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Harshit Allumolu</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <!-- <li><a href="#education" onclick="toggleMenu()">Education</a></li> -->
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/Harshit_LinkedIn_Dp.jpeg" alt="Harshit Allumolu" class="profile-pic">
+        </div>
+        <div class="section__text typewriter">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Harshit Allumolu</h1>
+            <p class="section__text__p2">Software Engineer | Data Scientist</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Harshit_Allumolu_Resume.pdf')">Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="window.open('https://www.linkedin.com/in/harshit-allumolu/')">
+                <img src="./assets/github.png" alt="GitHub" class="icon" onclick="window.open('https://github.com/harshit-asu')">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <!-- <p class="section__text__p1">Get To Know More</p> -->
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <!-- <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="Profile Picture" class="about-pic">
+            </div> -->
+            <div class="about-details-container">
+                <div class="text-container">
+                    <p>As a computer science graduate student at Arizona State University, I am passionate about applying my programming and data science skills to solve real-world problems. I have a strong foundation in algorithm design, data mining, and machine learning, and I am proficient in Python, C++, Ruby, and JavaScript.<br><br>I have demonstrated my abilities in full-stack development and data science through my previous work experience at Chronus and Axis Bank, where I delivered innovative solutions that enhanced user experience, engagement, and satisfaction. At Chronus, I introduced the Out-Of-Office feature, engineered a bulk mentor-mentee assignment algorithm, and integrated Slack into the application. At Axis Bank, I designed and implemented a context-based QnA chatbot and an advanced FAQ chatbot using natural language processing techniques. I am excited to continue pushing the boundaries of technology and making a positive impact.</p>
+                </div>
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2>Education</h2>
+                        <div class="college">
+                            <!-- <div class="education-image">
+                                <img src="./assets/asu.png" alt="Education">
+                            </div> -->
+                            <div class="college-details">
+                                <span class="timeline">January 2023 - Present</span>
+                                <h3>Arizona State University, Tempe, Arizona</h3>
+                                <p>Master of Computer Science • GPA: 4.0/4.0</p>
+                            </div>
+                        </div>
+                        <div class="college">
+                            <!-- <div class="education-image">
+                                <img src="./assets/nitw.png" alt="Education">
+                            </div> -->
+                            <div class="college-details">
+                                <span class="timeline">July 2017 - May 2021</span>
+                                <h3>National Institute of Technology Warangal, India</h3>
+                                <p>B.Tech in Computer Science & Engineering • GPA: 7.06/10</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2>Work Experience</h2>
+                        <div class="college">
+                            <!-- <div class="education-image">
+                                <img src="./assets/asu.png" alt="Education">
+                            </div> -->
+                            <div class="college-details">
+                                <span class="timeline">August 2021 - December 2022</span>
+                                <h3>Chronus Software India Pvt. Ltd., Hyderabad, India</h3>
+                                <p>Software Development Engineer • Full-Time • Ruby on Rails</p>
+                            </div>
+                        </div>
+                        <div class="college">
+                            <!-- <div class="education-image">
+                                <img src="./assets/nitw.png" alt="Education">
+                            </div> -->
+                            <div class="college-details">
+                                <span class="timeline">April 2020 - June 2020</span>
+                                <h3>Axis Bank Ltd., Bengaluru, India</h3>
+                                <p>Data Scientist • Internship • Natural Language Processing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'">
+    </section>
+    <section id="skills">
+        <!-- <p class="section__text__p1">Explore My</p> -->
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <!-- <h2 class="experience-sub-title">Programming Languages</h2> -->
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/python.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/cpp_logo.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>C++</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/ruby.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Ruby</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/JavaScript-logo.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/c_logo.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>C</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/java.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/mysql.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>MySQL</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/postgres.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>PostgreSQL</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/mongo.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>MongoDB</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/rails.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Ruby on Rails</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/flask.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Flask</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/django.webp" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Django</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/react.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>React</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/html.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>HTML5</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/css.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/bootstrap.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Bootstrap</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/git.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Git</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/github.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>GitHub</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/jira.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Jira</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/selenium.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Selenium</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/tensorflow.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>TensorFlow</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/linux.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Linux</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/redis.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Redis</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/awss3.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>AWS S3</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/docker.webp" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Docker</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <!-- <p class="section__text__p1">Browse My</p> -->
+        <h1 class="title">My Work</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <h2 class="experience-sub-title project-title">Stance Detection</h2>
+                    <div class="article-container">
+                        <img src="./assets/stance_detection.png" alt="Stance Detection" class="project-img">
+                    </div>
+                    <div class="project-details">
+                        Developed 40 classifiers utilizing a curated dataset of 14.3 million tweets to detect user stances, showcasing expertise in advanced machine learning techniques for social media analytics.
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/harshit-asu/Stance-Detection')">GitHub</button>
+                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button> -->
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <h2 class="experience-sub-title project-title">Earthquake Detection</h2>
+                    <div class="article-container">
+                        <img src="./assets/earthquake_detection.png" alt="Earthquake Detection" class="project-img">
+                    </div>
+                    <div class="project-details">
+                        Led seismic data research on the STEAD dataset, experimented and modified the InceptionTime model, achieving superior performance with 9% greater accuracy and promising improvements in early and accurate seismic event detection.
+                    </div>
+                    <!-- <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button>
+                    </div> -->
+                </div>
+                <div class="details-container color-container">
+                    <h2 class="experience-sub-title project-title">Family Expense Tracker</h2>
+                    <div class="article-container">
+                        <img src="./assets/fet.jpg" alt="Family Expense Tracker" class="project-img">
+                    </div>
+                    <div class="project-details">
+                        A Python Flask web app for family financial management, facilitating wallet tracking and transactions with user-friendly family account features.
+                    </div>
+                    <div class="btn-container">
+                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">GitHub</button> -->
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://drive.google.com/file/d/19jPZRUf0NF4I3qEtGwWCeR_CwIb1P2rt/view?usp=sharing')">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:hallumol@asu.edu">hallumol@asu.edu</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/mobile.png" alt="Mobile icon" class="icon contact-icon email-icon">
+                <p><a href="tel:+1602-334-0099">+1 (602) 334-0099</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/harshit-allumolu/">linkedin.com/in/harshit-allumolu</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#education">Education</a></li> -->
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#experience">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Harshit Allumolu. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
